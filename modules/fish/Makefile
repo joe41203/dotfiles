@@ -33,6 +33,7 @@ $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
 	ln -sf $(SELF_FISH_DIR)/functions/tmux_attach_session_if_needed.fish $(FISH_FUNCTION_DIR)/tmux_attach_session_if_needed.fish
 	ln -sf $(SELF_FISH_DIR)/functions/git.fish $(FISH_FUNCTION_DIR)/git.fish
+	ln -sf $(SELF_FISH_DIR)/functions/gibo.fish $(FISH_FUNCTION_DIR)/gibo.fish
 	curl https://git.io/fisher --create-dirs -sLo $(FISH_FISHER_FILE)
 
 $(FISH_COMPLETION_DIR):
