@@ -1,4 +1,4 @@
-function git-branch-delete-peco
+function git-branch-delete
   git branch | egrep -v "main|master|develop|release" | peco | xargs git branch -D
 end
 
