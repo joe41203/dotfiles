@@ -1,0 +1,84 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+colorscheme iceberg
+'''
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+set updatetime=250
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+let g:indentLine_faster = 1
+let g:indentLine_char = '¦'
+'''
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'mg979/vim-visual-multi'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+set fileencoding=utf-8 fileformat=unix
+'''
+
+[[plugins]]
+repo = 'mattn/vim-sl'
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = "vim-denops/denops.vim"
+
+[[plugins]]
+repo = "vim-skk/skkeleton"
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --bin'
+merged = '0'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'previm/previm'

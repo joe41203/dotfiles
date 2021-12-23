@@ -12,3 +12,5 @@ if type -q terraform
 end
 
 alias gg='git grep'
+alias vi='nvim'
+alias vim='nvim'
