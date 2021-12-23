@@ -24,16 +24,5 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-set encoding=utf-8
-set fileencoding=utf-8
-set number
-
-let mapleader = ","
-
-nnoremap [Fzf] <Nop>
-nmap <Leader>f [Fzf]
-nnoremap [Fzf]a :<C-u>Ag<CR>
-nnoremap [Fzf]f :<C-u>Files<CR>
-nnoremap [Fzf]g :<C-u>GFiles<CR>
-nnoremap [Fzf]G :<C-u>GFiles?<CR>
-nnoremap [Fzf]b :<C-u>Buffers<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :Ag<CR>
