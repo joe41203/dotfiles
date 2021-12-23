@@ -17,6 +17,7 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
+	make fish-update
 
 .PHONY: fish-update
 fish-update:
@@ -31,6 +32,7 @@ $(FISH_DIR):
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
 	ln -sf $(SELF_FISH_DIR)/functions/tmux_attach_session_if_needed.fish $(FISH_FUNCTION_DIR)/tmux_attach_session_if_needed.fish
+	ln -sf $(SELF_FISH_DIR)/functions/git.fish $(FISH_FUNCTION_DIR)/git.fish
 	curl https://git.io/fisher --create-dirs -sLo $(FISH_FISHER_FILE)
 
 $(FISH_COMPLETION_DIR):
