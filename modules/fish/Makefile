@@ -21,7 +21,7 @@ fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CON
 .PHONY: fish-update
 fish-update:
 	fish -c "fisher update"
-	exec $SHELL -l
+	exec fish
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
