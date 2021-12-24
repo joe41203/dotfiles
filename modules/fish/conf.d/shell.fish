@@ -11,6 +11,10 @@ if type -q terraform
   alias tf='terraform'
 end
 
+if type -q kubectl
+  alias k='kubectl'
+end
+
 alias gg='git grep'
 alias vi='nvim'
 alias vim='nvim'
