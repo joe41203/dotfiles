@@ -12,6 +12,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/neosnippet-snippets')
 
   call dein#load_toml('~/.config/nvim/dein.toml', { 'lazy': 0 })
+  call coc#util#install()
 
   call dein#end()
   call dein#save_state()

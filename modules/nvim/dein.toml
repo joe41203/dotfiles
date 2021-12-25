@@ -82,3 +82,7 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'previm/previm'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+
