@@ -86,3 +86,6 @@ repo = 'previm/previm'
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 
+[[plugins]]
+repo = 'ervandew/supertab'
+
