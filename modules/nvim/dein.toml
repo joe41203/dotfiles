@@ -89,3 +89,5 @@ repo = 'neoclide/coc.nvim'
 [[plugins]]
 repo = 'ervandew/supertab'
 
+[[plugins]]
+repo = 'mg979/vim-visual-multi'
