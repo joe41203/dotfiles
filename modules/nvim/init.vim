@@ -25,5 +25,10 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :Ag<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-h> :NERDTreeFind<CR>
+
+let NERDTreeShowHidden = 1
+
