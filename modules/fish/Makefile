@@ -32,8 +32,10 @@ $(FISH_DIR):
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
 	ln -sf $(SELF_FISH_DIR)/functions/tmux_attach_session_if_needed.fish $(FISH_FUNCTION_DIR)/tmux_attach_session_if_needed.fish
-	ln -sf $(SELF_FISH_DIR)/functions/git.fish $(FISH_FUNCTION_DIR)/git.fish
-	ln -sf $(SELF_FISH_DIR)/functions/gibo-generate.fish $(FISH_FUNCTION_DIR)/gibo-generate.fish
+	ln -sf $(SELF_FISH_DIR)/functions/git_branch_delete.fish $(FISH_FUNCTION_DIR)/git_branch_delete.fish
+	ln -sf $(SELF_FISH_DIR)/functions/git_checkout.fish $(FISH_FUNCTION_DIR)/git_checkout.fish
+	ln -sf $(SELF_FISH_DIR)/functions/gibo_generate.fish $(FISH_FUNCTION_DIR)/gibo_generate.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/f.fish $(FISH_FUNCTION_DIR)/f.fish
 	curl https://git.io/fisher --create-dirs -sLo $(FISH_FISHER_FILE)
 
