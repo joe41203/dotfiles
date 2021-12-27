@@ -29,6 +29,7 @@ nnoremap <C-f> :Ag<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-h> :NERDTreeFind<CR>
+nnoremap <F5> :UndotreeToggle<CR>
 
 let NERDTreeShowHidden = 1
 

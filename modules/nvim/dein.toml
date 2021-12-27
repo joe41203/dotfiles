@@ -91,3 +91,8 @@ repo = 'ervandew/supertab'
 
 [[plugins]]
 repo = 'mg979/vim-visual-multi'
+
+[[plugins]]
+repo = 'mbbill/undotree'
+
+
