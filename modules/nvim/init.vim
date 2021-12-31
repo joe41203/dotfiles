@@ -64,7 +64,6 @@ inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-h> :NERDTreeFind<CR>
 nnoremap <F5> :UndotreeToggle<CR>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
