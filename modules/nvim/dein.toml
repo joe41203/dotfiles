@@ -95,4 +95,7 @@ repo = 'mg979/vim-visual-multi'
 [[plugins]]
 repo = 'mbbill/undotree'
 
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+
 
