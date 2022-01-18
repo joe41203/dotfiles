@@ -1,6 +1,6 @@
 filetype plugin indent on
 
-set encoding=utf-8
+set encoding=UTF-8
 set modifiable
 set fileencoding=utf-8
 set clipboard+=unnamed

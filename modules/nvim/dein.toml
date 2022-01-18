@@ -98,4 +98,7 @@ repo = 'mbbill/undotree'
 [[plugins]]
 repo = 'hashivim/vim-terraform'
 
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
 

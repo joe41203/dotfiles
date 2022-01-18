@@ -80,5 +80,7 @@ noremap! <down>  <nop>
 noremap  <s>     <nop>
 noremap! <s>     <nop>
 
+let g:webdevicons_enable_nerdtree = 1
+
 syntax on
 
