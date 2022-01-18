@@ -101,4 +101,7 @@ repo = 'hashivim/vim-terraform'
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
 
