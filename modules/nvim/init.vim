@@ -14,6 +14,31 @@ if dein#load_state('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/dein.toml', { 'lazy': 0 })
   call coc#util#install()
 
+  call ddc#custom#patch_global('completionMenu', 'pum.vim')
+  call ddc#custom#patch_global('sources', [
+   \ 'around',
+   \ 'vim-lsp',
+   \ 'file'
+   \ ])
+  call ddc#custom#patch_global('sourceOptions', {
+   \ '_': {
+   \   'matchers': ['matcher_head'],
+   \   'sorters': ['sorter_rank'],
+   \   'converters': ['converter_remove_overlap'],
+   \ },
+   \ 'around': {'mark': 'Around'},
+   \ 'vim-lsp': {
+   \   'mark': 'LSP',
+   \   'matchers': ['matcher_head'],
+   \   'forceCompletionPattern': '\.|:|->|"\w+/*'
+   \ },
+   \ 'file': {
+   \   'mark': 'file',
+   \   'isVolatile': v:true,
+   \   'forceCompletionPattern': '\S/\S*'
+   \ }})
+  call ddc#enable()
+
   call dein#end()
   call dein#save_state()
 endif
@@ -60,6 +85,8 @@ set completeopt=menuone,noinsert
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
+inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
 
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -69,6 +96,7 @@ nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
+
 noremap  <up>    <nop>
 noremap  <left>  <nop>
 noremap  <right> <nop>
