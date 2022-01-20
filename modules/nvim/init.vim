@@ -109,6 +109,8 @@ noremap  <s>     <nop>
 noremap! <s>     <nop>
 
 let g:webdevicons_enable_nerdtree = 1
+let g:python_host_prog = system('echo -n (which python2)')
+let g:python3_host_prog = system('echo -n (which python3)')
 
 syntax on
 
