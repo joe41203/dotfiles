@@ -50,8 +50,6 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-let NERDTreeShowHidden = 1
-
 filetype plugin indent on
 
 set encoding=utf-8
@@ -79,7 +77,6 @@ set splitright
 set incsearch
 set ignorecase
 set smartcase
-
 set completeopt=menuone,noinsert
 
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
@@ -88,10 +85,11 @@ inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
 inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
 
-nnoremap <C-f> :Ag<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-g> :Ag<CR>
+nnoremap <C-f> :Rg<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
+nnoremap <F6> :NERDTreeFind<CR>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
@@ -111,6 +109,7 @@ noremap! <s>     <nop>
 let g:webdevicons_enable_nerdtree = 1
 let g:python_host_prog = system('echo -n (which python2)')
 let g:python3_host_prog = system('echo -n (which python3)')
+let NERDTreeShowHidden = 1
 
 syntax on
 
