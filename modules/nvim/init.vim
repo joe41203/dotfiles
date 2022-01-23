@@ -12,7 +12,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/neosnippet-snippets')
 
   call dein#load_toml('~/.config/nvim/dein.toml', { 'lazy': 0 })
-  call coc#util#install()
 
   call ddc#custom#patch_global('completionMenu', 'pum.vim')
   call ddc#custom#patch_global('sources', [
@@ -105,6 +104,11 @@ noremap! <right> <nop>
 noremap! <down>  <nop>
 noremap  <s>     <nop>
 noremap! <s>     <nop>
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 let g:webdevicons_enable_nerdtree = 1
 let g:python_host_prog = system('echo -n (which python2)')

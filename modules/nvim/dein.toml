@@ -57,9 +57,6 @@ repo = 'prabirshrestha/async.vim'
 repo = 'prabirshrestha/asyncomplete.vim'
 
 [[plugins]]
-repo = "vim-denops/denops.vim"
-
-[[plugins]]
 repo = "vim-skk/skkeleton"
 
 [[plugins]]
@@ -85,12 +82,12 @@ repo = 'previm/previm'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
 
 [[plugins]]
 repo = 'ervandew/supertab'
-
-[[plugins]]
-repo = 'mg979/vim-visual-multi'
 
 [[plugins]]
 repo = 'mbbill/undotree'
