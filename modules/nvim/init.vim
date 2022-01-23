@@ -44,7 +44,6 @@ endif
 
 filetype plugin indent on
 syntax enable
-
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
@@ -52,6 +51,7 @@ endif
 filetype plugin indent on
 
 set encoding=utf-8
+set nowrap
 set modifiable
 set fileencoding=utf-8
 set clipboard+=unnamed

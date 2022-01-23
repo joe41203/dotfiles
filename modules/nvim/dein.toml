@@ -50,11 +50,11 @@ repo = 'jiangmiao/auto-pairs'
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
 
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
+##[[plugins]]
+##repo = 'prabirshrestha/async.vim'
+##
+##[[plugins]]
+##repo = 'prabirshrestha/asyncomplete.vim'
 
 [[plugins]]
 repo = "vim-skk/skkeleton"
