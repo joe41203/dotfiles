@@ -56,8 +56,8 @@ set completeopt=menuone,noinsert
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
-inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
-inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
+inoremap <Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
+inoremap <S-Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
 
 nnoremap <C-g> :Ag<CR>
 nnoremap <C-f> :Rg<CR>
@@ -68,15 +68,20 @@ nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
+nnoremap zh 0
+nnoremap zl $
+nnoremap zj G
+nnoremap zk gg
 
-noremap  <up>    <nop>
-noremap  <left>  <nop>
-noremap  <right> <nop>
-noremap  <down>  <nop>
-noremap! <up>    <nop>
-noremap! <left>  <nop>
-noremap! <right> <nop>
-noremap! <down>  <nop>
+
+"noremap  <up>    <nop>
+"noremap  <left>  <nop>
+"noremap  <right> <nop>
+"noremap  <down>  <nop>
+"noremap! <up>    <nop>
+"noremap! <left>  <nop>
+"noremap! <right> <nop>
+"noremap! <down>  <nop>
 noremap  <s>     <nop>
 noremap! <s>     <nop>
 
