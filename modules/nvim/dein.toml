@@ -1,10 +1,16 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+#[[plugins]]
+#repo = 'cocopon/iceberg.vim'
+#hook_add = '''
+#colorscheme iceberg
+#'''
+
 [[plugins]]
-repo = 'cocopon/iceberg.vim'
+repo = 'gosukiwi/vim-atom-dark'
 hook_add = '''
-colorscheme iceberg
+colorscheme atom-dark-256
 '''
 
 [[plugins]]
