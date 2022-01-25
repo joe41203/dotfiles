@@ -50,12 +50,6 @@ repo = 'jiangmiao/auto-pairs'
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
 
-##[[plugins]]
-##repo = 'prabirshrestha/async.vim'
-##
-##[[plugins]]
-##repo = 'prabirshrestha/asyncomplete.vim'
-
 [[plugins]]
 repo = "vim-skk/skkeleton"
 
@@ -100,35 +94,4 @@ repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
-
-[[plugins]]
-repo = 'Shougo/ddc.vim'
-
-[[plugins]]
-repo = 'vim-denops/denops.vim'
-
-[[plugins]]
-repo = 'Shougo/pum.vim'
-
-[[plugins]]
-repo = 'Shougo/ddc-around'
-
-[[plugins]]
-repo = 'LumaKernel/ddc-file'
-
-[[plugins]]
-repo = 'Shougo/ddc-matcher_head'
-
-[[plugins]]
-repo = 'Shougo/ddc-sorter_rank'
-
-[[plugins]]
-repo = 'Shougo/ddc-converter_remove_overlap'
-
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
-
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-
 
