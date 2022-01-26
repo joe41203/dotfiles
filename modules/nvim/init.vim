@@ -52,6 +52,8 @@ set incsearch
 set ignorecase
 set smartcase
 set completeopt=menuone,noinsert
+set mouse=a
+
 
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
