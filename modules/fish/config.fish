@@ -5,3 +5,5 @@ source /usr/local/opt/asdf/libexec/asdf.fish
 if type -q tmux && test -z $TMUX && status --is-login
     tmux_attach_session_if_needed
 end
+
+set -x PATH "$HOME/go/bin" $PATH
