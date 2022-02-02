@@ -6,4 +6,5 @@ if type -q tmux && test -z $TMUX && status --is-login
     tmux_attach_session_if_needed
 end
 
+set -x GOPATH "$HOME/go"
 set -x PATH "$HOME/go/bin" $PATH
