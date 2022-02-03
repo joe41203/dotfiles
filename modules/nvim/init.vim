@@ -92,6 +92,12 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" tabpage control
+nnoremap st :tabnew<CR>
+nnoremap sn :tabnext<CR>
+nnoremap sp :tabprevious<CR>
+nnoremap sc :tabclose<CR>
+
 let g:webdevicons_enable_nerdtree = 1
 let g:python_host_prog = system('echo -n (which python2)')
 let g:python3_host_prog = system('echo -n (which python3)')
