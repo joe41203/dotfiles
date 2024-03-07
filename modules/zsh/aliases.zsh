@@ -1,0 +1,7 @@
+alias t="tig"
+alias s="tig status"
+alias bc="bundle exec rails c"
+alias vim="nvim"
+alias gg="git grep"
+alias tf="terraform"
+alias top="htop"

@@ -1,0 +1,34 @@
+OH_MY_ZSH_DIR = ~/.oh-my-zsh
+OH_MY_ZSH_GITHUB_URL = https://github.com/ohmyzsh/ohmyzsh
+ZSHHOME := ~/.zsh
+SELF_ZSH_DIR = $(MODULE_DIR)/zsh
+
+.PHONY: zsh-clean
+zsh-clean:
+	rm -fr $(OH_MY_ZSH_DIR)
+	rm -f $(HOME)/.zshrc
+	rm -fr $(ZSHHOME)
+
+.PHONY: zsh-install
+zsh-install: $(OH_MY_ZSH_DIR) $(ZSHHOME) $(ZSHHOME)/aliases.zsh $(ZSHHOME)/env.zsh $(ZSHHOME)/plugins.zsh $(ZSHHOME)/functions
+
+$(OH_MY_ZSH_DIR):
+	git clone $(OH_MY_ZSH_GITHUB_URL) $(OH_MY_ZSH_DIR)
+
+$(ZSHHOME):
+	mkdir -p $(ZSHHOME)
+
+$(HOME)/.zshrc: $(SELF_ZSH_DIR)/dot.zshrc
+	ln -sf $(abspath $(SELF_ZSH_DIR)/dot.zshrc) $(HOME)/.zshrc
+
+$(ZSHHOME)/aliases.zsh: $(SELF_ZSH_DIR)/aliases.zsh
+	ln -sf $(abspath $(SELF_ZSH_DIR)/aliases.zsh) $(ZSHHOME)/aliases.zsh
+
+$(ZSHHOME)/env.zsh: $(SELF_ZSH_DIR)/env.zsh
+	ln -sf $(abspath $(SELF_ZSH_DIR)/env.zsh) $(ZSHHOME)/env.zsh
+
+$(ZSHHOME)/plugins.zsh: $(SELF_ZSH_DIR)/plugins.zsh
+	ln -sf $(abspath $(SELF_ZSH_DIR)/plugins.zsh) $(ZSHHOME)/plugins.zsh
+
+$(ZSHHOME)/functions: $(SELF_ZSH_DIR)/functions
+	ln -sf $(abspath $(SELF_ZSH_DIR)/functions) $(ZSHHOME)/functions
