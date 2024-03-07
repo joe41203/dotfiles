@@ -23,5 +23,6 @@ brew "zplug"
 brew "dust"
 brew "duf"
 brew "ripgrep"
+brew "httpie"
 
 cask "font-hack-nerd-font"
