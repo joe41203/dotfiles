@@ -21,5 +21,6 @@ brew "wget"
 brew "yarn"
 brew "zplug"
 brew "dust"
+brew "duf"
 
 cask "font-hack-nerd-font"
