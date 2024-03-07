@@ -98,3 +98,32 @@ repo = 'kristijanhusak/defx-icons'
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
 
+[[plugins]]
+repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+
+[[plugins]]
+repo = 'mhinz/vim-startify'
+
+[[plugins]]
+repo = 'liuchengxu/vim-which-key'
+
+[[plugins]]
+repo = 'machakann/vim-highlightedyank'
+
+[[plugins]]
+repo = 'junegunn/goyo.vim'
+
+[[plugins]]
+repo = 'junegunn/limelight.vim'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
