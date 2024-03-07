@@ -17,6 +17,8 @@ source $ZSHHOME/plugins.zsh
 
 # Load custom functions
 fpath=($ZSHHOME/functions $fpath)
-autoload -U $ZSHHOME/functions/*(:t)
+for func in $ZSHHOME/functions/*.zsh; do
+    source $func
+done
 
 unset MAILCHECK

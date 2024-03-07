@@ -18,9 +18,6 @@ $(OH_MY_ZSH_DIR):
 $(ZSHHOME):
 	mkdir -p $(ZSHHOME)
 
-$(HOME)/.zshrc: $(SELF_ZSH_DIR)/dot.zshrc
-	ln -sf $(abspath $(SELF_ZSH_DIR)/dot.zshrc) $(HOME)/.zshrc
-
 $(ZSHHOME)/aliases.zsh: $(SELF_ZSH_DIR)/aliases.zsh
 	ln -sf $(abspath $(SELF_ZSH_DIR)/aliases.zsh) $(ZSHHOME)/aliases.zsh
 
@@ -31,4 +28,5 @@ $(ZSHHOME)/plugins.zsh: $(SELF_ZSH_DIR)/plugins.zsh
 	ln -sf $(abspath $(SELF_ZSH_DIR)/plugins.zsh) $(ZSHHOME)/plugins.zsh
 
 $(ZSHHOME)/functions: $(SELF_ZSH_DIR)/functions
-	ln -sf $(abspath $(SELF_ZSH_DIR)/functions) $(ZSHHOME)/functions
+	mkdir -p $(ZSHHOME)/functions
+	find $(SELF_ZSH_DIR)/functions -type f -print0 | xargs -0 -I{} ln -sf {} $(ZSHHOME)/functions/
