@@ -24,5 +24,6 @@ brew "dust"
 brew "duf"
 brew "ripgrep"
 brew "httpie"
+brew "tldr"
 
 cask "font-hack-nerd-font"
