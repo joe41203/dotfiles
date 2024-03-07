@@ -22,5 +22,6 @@ brew "yarn"
 brew "zplug"
 brew "dust"
 brew "duf"
+brew "ripgrep"
 
 cask "font-hack-nerd-font"
