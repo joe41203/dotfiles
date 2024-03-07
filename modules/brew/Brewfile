@@ -20,5 +20,6 @@ brew "tree"
 brew "wget"
 brew "yarn"
 brew "zplug"
+brew "dust"
 
 cask "font-hack-nerd-font"
