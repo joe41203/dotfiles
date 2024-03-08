@@ -26,5 +26,6 @@ brew "ripgrep"
 brew "httpie"
 brew "tldr"
 brew "git-secrets"
+brew "navi"
 
 cask "font-hack-nerd-font"
