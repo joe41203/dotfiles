@@ -1,8 +1,9 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "editor.formatOnSave": true,
-    "workbench.startupEditor": "none",
-    "editor.minimap.enabled": false,
-    "files.insertFinalNewline": true,
-    "editor.fontSize": 13
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "files.insertFinalNewline": true,
+  "editor.fontSize": 13,
+  "explorer.confirmDelete": false
 }
