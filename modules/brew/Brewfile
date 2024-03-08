@@ -27,5 +27,18 @@ brew "httpie"
 brew "tldr"
 brew "git-secrets"
 brew "navi"
+brew "mas"
 
 cask "font-hack-nerd-font"
+cask "bettertouchtool"
+cask "cheatsheet"
+cask "karabiner-elements"
+cask "xquartz"
+cask "google-japanese-ime"
+
+mas "LINE", id: 539883307
+mas "Xcode", id: 497799835
+mas "Magnet", id: 441258766
+mas "Amphetamine", id: 937984704
+mas "Kindle", id: 302584613
+mas "Slack", id: 803453959
