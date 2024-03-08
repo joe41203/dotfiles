@@ -14,6 +14,7 @@ install:
 	make vim-install
 	make zsh-install
 	make dot-install
+	make vscode-install
 
 .PHONY: clean
 clean:
@@ -24,3 +25,4 @@ clean:
 	make vim-clean
 	make zsh-clean
 	make dot-clean
+	make vscode-clean
