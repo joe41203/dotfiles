@@ -5,5 +5,9 @@
   "editor.minimap.enabled": false,
   "files.insertFinalNewline": true,
   "editor.fontSize": 13,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "tailwindCSS.emmetCompletions": true
 }
