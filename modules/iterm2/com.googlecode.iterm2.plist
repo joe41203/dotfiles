@@ -20,6 +20,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<true/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -667,12 +669,14 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -681,8 +685,14 @@
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>3</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<false/>
+	<key>TerminalMargin</key>
+	<integer>13</integer>
+	<key>TerminalVMargin</key>
+	<integer>10</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
