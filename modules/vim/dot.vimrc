@@ -46,4 +46,6 @@ noremap! <down>  <nop>
 noremap  <s>     <nop>
 noremap! <s>     <nop>
 
-syntax on
+syntax enable
+set background=dark
+colorscheme material-theme
