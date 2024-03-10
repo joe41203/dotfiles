@@ -9,5 +9,7 @@
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "emmet.useInlineCompletions": true,
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "python.analysis.autoImportCompletions": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true
 }
