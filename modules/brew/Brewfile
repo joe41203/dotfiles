@@ -34,6 +34,7 @@ brew "graphviz"
 brew "pinentry-mac"
 brew "pngquant"
 brew "tfsec"
+brew "tmux"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
