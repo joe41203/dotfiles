@@ -1,3 +1,3 @@
-function git_branch_delete_all() {
+function git-branch-delete-all() {
     git branch | xargs git branch -D
 }
