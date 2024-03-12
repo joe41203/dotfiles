@@ -38,6 +38,8 @@ brew "tmux"
 brew "trivy"
 brew "prettier"
 brew "lsd"
+brew "sleepwatcher"
+brew "blueutil"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
