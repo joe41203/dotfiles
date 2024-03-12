@@ -6,7 +6,6 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "paulirish/git-open"
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/dotenv", from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
