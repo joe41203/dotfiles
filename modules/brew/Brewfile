@@ -47,12 +47,14 @@ cask "xquartz"
 cask "google-japanese-ime"
 cask "visual-studio-code"
 
-mas "LINE", id: 539883307
-mas "Xcode", id: 497799835
-mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
 mas "Kindle", id: 302584613
+mas "LINE", id: 539883307
+mas "Magnet", id: 441258766
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "MindNode", id: 1289197285
 mas "Slack", id: 803453959
+mas "Xcode", id: 497799835
 
 vscode "aaron-bond.better-comments"
 vscode "bradlc.vscode-tailwindcss"
