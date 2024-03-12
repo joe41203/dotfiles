@@ -37,6 +37,7 @@ brew "tfsec"
 brew "tmux"
 brew "trivy"
 brew "prettier"
+brew "lsd"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
