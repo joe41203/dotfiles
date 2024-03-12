@@ -35,6 +35,7 @@ brew "pinentry-mac"
 brew "pngquant"
 brew "tfsec"
 brew "tmux"
+brew "trivy"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
