@@ -11,5 +11,6 @@
   "emmet.useInlineCompletions": true,
   "tailwindCSS.emmetCompletions": true,
   "python.analysis.autoImportCompletions": true,
-  "typescript.preferences.preferTypeOnlyAutoImports": true
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "security.workspace.trust.untrustedFiles": "open"
 }
