@@ -13,16 +13,6 @@
     "*.tsx": "typescriptreact"
   },
 
-  // エディターの設定
-  "editor": {
-    "formatOnSave": true,
-    "minimap.enabled": false,
-    "fontSize": 13,
-    "codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-
   // 言語固有の設定
   "languageSpecific": {
     "[ruby]": {
@@ -55,7 +45,7 @@
         "erb": "html",
         "javascript": "javascriptreact",
         "typescript": "typescriptreact",
-        "astro": "html",
+        "astro": "html"
       }
     },
     "ruby": {
@@ -84,5 +74,13 @@
   "terminal.integrated": {
     "fontSize": 14,
     "shell.osx": "/bin/zsh"
-  }
+  },
+
+  // エディターの設定
+  "editor.formatOnSave": true,
+  "editor.fontSize": 13,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.minimap.enabled": false
 }
