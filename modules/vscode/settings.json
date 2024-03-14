@@ -12,5 +12,51 @@
   "tailwindCSS.emmetCompletions": true,
   "python.analysis.autoImportCompletions": true,
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // 言語固有の設定
+  "[ruby]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+
+  // ファイルの関連付け
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.py": "python",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+
+  // Emmetの設定
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  // 拡張機能の設定
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "python.pythonPath": "python3",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // ターミナルの設定
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
