@@ -54,7 +54,8 @@
       "includeLanguages": {
         "erb": "html",
         "javascript": "javascriptreact",
-        "typescript": "typescriptreact"
+        "typescript": "typescriptreact",
+        "astro": "html",
       }
     },
     "ruby": {
