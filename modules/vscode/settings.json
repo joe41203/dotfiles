@@ -1,13 +1,19 @@
 {
+  // ワークベンチの設定
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
+
+  // ファイルの設定
   "files.insertFinalNewline": true,
   "explorer.confirmDelete": false,
-  "tailwindCSS.emmetCompletions": true,
-  "python.analysis.autoImportCompletions": true,
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "security.workspace.trust.untrustedFiles": "open",
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.py": "python",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
 
+  // エディターの設定
   "editor": {
     "formatOnSave": true,
     "minimap.enabled": false,
@@ -17,58 +23,63 @@
     }
   },
 
-  "[ruby]": {
-    "editor.tabSize": 2
-  },
-  "[python]": {
-    "editor.tabSize": 4
-  },
-  "[typescript]": {
-    "editor.tabSize": 2
-  },
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.tabSize": 2
-  },
-
-  "files.associations": {
-    "*.html.erb": "erb",
-    "*.py": "python",
-    "*.ts": "typescript",
-    "*.tsx": "typescriptreact"
-  },
-
-  "emmet": {
-    "showSuggestionsAsSnippets": true,
-    "triggerExpansionOnTab": true,
-    "useInlineCompletions": true,
-    "includeLanguages": {
-      "erb": "html",
-      "javascript": "javascriptreact",
-      "typescript": "typescriptreact"
+  // 言語固有の設定
+  "languageSpecific": {
+    "[ruby]": {
+      "editor.tabSize": 2
+    },
+    "[python]": {
+      "editor.tabSize": 4
+    },
+    "[typescript]": {
+      "editor.tabSize": 2
+    },
+    "[javascript]": {
+      "editor.tabSize": 2
+    },
+    "[json]": {
+      "editor.tabSize": 2
     }
   },
 
-  "ruby": {
-    "useBundler": true,
-    "useLanguageServer": true
+  // 拡張機能の設定
+  "extensions": {
+    "tailwindCSS.emmetCompletions": true,
+    "python.analysis.autoImportCompletions": true,
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "emmet": {
+      "showSuggestionsAsSnippets": true,
+      "triggerExpansionOnTab": true,
+      "useInlineCompletions": true,
+      "includeLanguages": {
+        "erb": "html",
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+      }
+    },
+    "ruby": {
+      "useBundler": true,
+      "useLanguageServer": true
+    },
+    "python": {
+      "pythonPath": "python3",
+      "linting.enabled": true,
+      "linting.pylintEnabled": true
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ]
   },
-  "python": {
-    "pythonPath": "python3",
-    "linting.enabled": true,
-    "linting.pylintEnabled": true
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
 
+  // セキュリティの設定
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ターミナルの設定
   "terminal.integrated": {
     "fontSize": 14,
     "shell.osx": "/bin/zsh"
