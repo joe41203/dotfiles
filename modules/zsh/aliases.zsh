@@ -8,7 +8,6 @@ alias top="htop"
 alias cat="bat -p"
 alias du="dust"
 alias df="duf"
-alias grep="rg"
 alias man="tldr"
 alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
@@ -21,3 +20,4 @@ alias lt='ls --tree'
 alias aic='npx aicommits'
 
 alias compress-images='compress-images'
+alias compress-image-peco='compress-image-peco'
