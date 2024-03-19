@@ -19,3 +19,5 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 alias aic='npx aicommits'
+
+alias compress-images='compress-images'
