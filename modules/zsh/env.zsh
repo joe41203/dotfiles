@@ -8,5 +8,8 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export GHQ_ROOT=$HOME/workspace
 
+export HISTSIZE=100000
+export SAVEHIST=100000
+
 eval "$(anyenv init -)"
 eval "$(rbenv init -)"
