@@ -22,3 +22,5 @@ for func in $ZSHHOME/functions/*.zsh; do
 done
 
 unset MAILCHECK
+
+setopt HIST_IGNORE_SPACE

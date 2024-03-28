@@ -10,6 +10,7 @@ export GHQ_ROOT=$HOME/workspace
 
 export HISTSIZE=100000
 export SAVEHIST=100000
+export HISTCONTROL='ignoredups'
 
 eval "$(anyenv init -)"
 eval "$(rbenv init -)"
