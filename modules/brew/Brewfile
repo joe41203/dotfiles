@@ -43,6 +43,7 @@ brew "blueutil"
 brew "webp"
 brew "jpegoptim"
 brew "optipng"
+brew "trafilatura"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
