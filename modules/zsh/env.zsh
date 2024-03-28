@@ -8,9 +8,9 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export GHQ_ROOT=$HOME/workspace
 
-export HISTSIZE=100000
+export HISTSIZE=1000
 export SAVEHIST=100000
-export HISTCONTROL='ignoredups'
+export HISTFILE=${HOME}/.zsh_history
 
 eval "$(anyenv init -)"
 eval "$(rbenv init -)"
