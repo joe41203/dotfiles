@@ -21,3 +21,4 @@ alias aic='npx aicommits'
 
 alias compress-images='compress-images'
 alias compress-image-peco='compress-image-peco'
+alias trafilatura-pbcopy='trafilatura-pbcopy'
