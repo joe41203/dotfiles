@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 trim_trailing_whitespace = false
 
 [*.{js,py,rb,go,sh,zsh,bash,fish,vim,nvim,tmux}]
-indent_size = 4
+indent_size = 2
 
 [*.{html,css,scss,sass,less,json,yml,yaml,toml,xml,svg,plist,xaml,config,ini,gitconfig}]
 indent_size = 2
@@ -30,7 +30,7 @@ indent_style = tab
 indent_size = 2
 
 [*.{dockerfile,Dockerfile}]
-indent_size = 4
+indent_size = 2
 
 [*.{gitignore,dockerignore,editorconfig}]
 indent_size = 2
