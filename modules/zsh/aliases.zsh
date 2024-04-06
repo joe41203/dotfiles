@@ -11,11 +11,10 @@ alias df="duf"
 alias man="tldr"
 alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias ls='lsd -la'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lt='lsd --tree'
 
 alias aic='npx aicommits'
 
