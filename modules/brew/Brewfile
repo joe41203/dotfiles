@@ -44,6 +44,7 @@ brew "webp"
 brew "jpegoptim"
 brew "optipng"
 brew "trafilatura"
+brew "gibo"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
