@@ -2,35 +2,53 @@ root = true
 
 [*]
 charset = utf-8
-indent_style = space
-indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = space
 
-[*.{md,txt}]
-trim_trailing_whitespace = false
+[{Makefile, *.mk}]
+indent_style = tab
+indent_size = 4
 
-[*.{js,py,rb,go,sh,zsh,bash,fish,vim,nvim,tmux}]
-indent_size = 2
-
-[*.{html,css,scss,sass,less,json,yml,yaml,toml,xml,svg,plist,xaml,config,ini,gitconfig}]
-indent_size = 2
-
-[*.{ts,tsx,jsx,vue}]
-indent_size = 2
-
-[*.{sql,pgsql,mysql,db}]
-indent_size = 2
-
-[*.{mk,mak,make,makefile,Makefile}]
+[nginx.conf]
+indent_size = 4
 indent_style = tab
 
-[*.{tf,tfvars,hcl,tfstate,tfstate.backup}]
+[mpd.conf]
+indent_size = 4
+indent_style = tab
+
+[*.{yml,yaml}]
 indent_size = 2
 
-[*.{dockerfile,Dockerfile}]
+[*.tf]
 indent_size = 2
 
-[*.{gitignore,dockerignore,editorconfig}]
+[*.scala]
+indent_size = 2
+
+[package.json]
+indent_size = 2
+
+[*.{el,lisp,asd}]
+max_line_length = 80
+
+[*.v]
+indent_size = 4
+indent_style = tab
+
+[*.{ts,tsx}]
+indent_size = 2
+
+[*.toml]
+indent_size = 2
+
+[*.xml]
+indent_size = 4
+
+[*.jsonnet]
+indent_size = 2
+
+[*.nix]
 indent_size = 2
