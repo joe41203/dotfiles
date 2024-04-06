@@ -1,16 +1,39 @@
 [core]
-  editor = vim
-  pager = less
-  excludesfile = ~/.config/git/ignore
+excludesfile = ~/.gitignore
+quotepath = off
+ignorecase = false
+safecrlf = true
+autocrlf = false
+precomposeunicode = true
 
-[color]
-  ui = auto
+[ghq]
+root = ~/.ghq
 
-[push]
-  default = simple
+[fetch]
+prune = true
 
 [pull]
-  rebase = false
+rebase = false
 
-[merge]
-  conflictstyle = diff3
+[push]
+default = nothing
+
+[gpg]
+program = gpg
+
+[diff]
+patience = true
+
+[color]
+ui = auto
+status = auto
+diff = auto
+branch = auto
+interactive = auto
+grep = auto
+
+[url "git@github.com:"]
+insteadOf = https://github.com/
+
+[init]
+defaultBranch = main
