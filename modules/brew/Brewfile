@@ -55,6 +55,7 @@ cask "google-japanese-ime"
 cask "visual-studio-code"
 
 mas "Amphetamine", id: 937984704
+mas "feedly", id: 865500966
 mas "Kindle", id: 302584613
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
