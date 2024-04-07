@@ -11,6 +11,7 @@ install:
 	make iterm2-install
 	make nvim-install
 	make tig-install
+	make peco-install
 	make vim-install
 	make zsh-install
 	make dot-install
@@ -22,6 +23,7 @@ clean:
 	make iterm2-clean
 	make nvim-clean
 	make tig-clean
+	make peco-clean
 	make vim-clean
 	make zsh-clean
 	make dot-clean
