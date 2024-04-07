@@ -6,6 +6,14 @@ safecrlf = true
 autocrlf = false
 precomposeunicode = true
 
+[user]
+name = kinjo
+email = kinjoyuji@gmail.com
+signingkey = 2F26EC6FC3B7DE62727293C81C7D5BEBF5750944
+
+[commit]
+gpgsign = true
+
 [ghq]
 root = ~/.ghq
 
