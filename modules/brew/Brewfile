@@ -46,6 +46,7 @@ brew "jpegoptim"
 brew "optipng"
 brew "trafilatura"
 brew "gibo"
+brew "speedtest-cli"
 
 cask "font-hack-nerd-font"
 cask "bettertouchtool"
