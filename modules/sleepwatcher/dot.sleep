@@ -1,1 +1,13 @@
+#!/bin/bash
+
+# Bluetoothをオフにする
 /opt/homebrew/bin/blueutil -p 0
+
+# アプリケーションを終了する(例: Chromeを終了する場合)
+pgrep Chrome | xargs kill -9
+
+# ネットワーク接続を切断する
+networksetup -setairportpower en0 off
+
+# ログを出力する
+echo "$(date) : Sleep script executed" >> /path/to/sleepwatcher.log

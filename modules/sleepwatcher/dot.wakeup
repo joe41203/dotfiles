@@ -1,1 +1,13 @@
+#!/bin/bash
+
+# Bluetoothをオンにする
 /opt/homebrew/bin/blueutil -p 1
+
+# 必要なアプリケーションを起動する(例: Chromeを起動する場合)
+open -a /Applications/Google\ Chrome.app
+
+# ネットワークに接続する
+networksetup -setairportpower en0 on
+
+# ログを出力する
+echo "$(date) : Wakeup script executed" >> /path/to/sleepwatcher.log
