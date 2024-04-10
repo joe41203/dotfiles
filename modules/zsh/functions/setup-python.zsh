@@ -13,12 +13,22 @@ function setup-python() {
     echo "Creating .python-version..."
     echo $selected_python_version > .python-version
 
-    echo "Creating virtual environment..."
-    pyenv exec python -m venv .venv
-    source .venv/bin/activate
+    echo "Select a package manager (poetry or pip) using peco..."
+    package_manager=$(echo -e "poetry\npip" | peco)
 
-    echo "Creating requirements.txt..."
-    pip freeze > requirements.txt
+    if [ "$package_manager" = "poetry" ]; then
+        echo "Creating pyproject.toml and poetry.lock..."
+        poetry init --no-interaction
+        poetry config --local virtualenvs.in-project true
+        poetry lock
+    else
+        echo "Creating virtual environment..."
+        pyenv exec python -m venv .venv
+        source .venv/bin/activate
+
+        echo "Creating requirements.txt..."
+        pip freeze > requirements.txt
+    fi
 
     echo "Python environment setup complete!"
 }
