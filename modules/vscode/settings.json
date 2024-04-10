@@ -82,5 +82,18 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.addImport.exactMatchOnly": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.enableSyncServer": true,
+  "python.languageServer": "Pylance",
+  "path-intellisense.autoTriggerNextSuggestion": true,
+  "path-intellisense.extensionOnImport": true
 }
