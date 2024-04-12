@@ -9,7 +9,7 @@ bundle-install: $(BUNDLE_DIR)/config
 
 $(BUNDLE_DIR)/config: $(SELF_BUNDLE_DIR)/config
 	mkdir -p $(BUNDLE_DIR)
-	ln -sf $(SELF_BUNDLE_DIR)/.bundle/config $(BUNDLE_DIR)/config
+	ln -sf $(SELF_BUNDLE_DIR)/config $(BUNDLE_DIR)/config
 
 .PHONY: bundle-clean
 bundle-clean:
