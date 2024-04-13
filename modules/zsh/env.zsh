@@ -12,5 +12,7 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 export HISTFILE=${HOME}/.zsh_history
 
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
+
 eval "$(anyenv init -)"
 eval "$(rbenv init -)"
