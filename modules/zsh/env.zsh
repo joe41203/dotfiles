@@ -17,5 +17,7 @@ export HISTFILE=${HOME}/.zsh_history
 
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
 
+export OP_ACCOUNT="my.1password.com"
+
 eval "$(anyenv init -)"
 eval "$(rbenv init -)"
