@@ -10,7 +10,7 @@ zsh-clean:
 	rm -fr $(ZSHHOME)
 
 .PHONY: zsh-install
-zsh-install: $(OH_MY_ZSH_DIR) $(ZSHHOME) $(ZSHHOME)/aliases.zsh $(ZSHHOME)/env.zsh $(ZSHHOME)/plugins.zsh $(ZSHHOME)/functions
+zsh-install: $(OH_MY_ZSH_DIR) $(ZSHHOME) $(ZSHHOME)/aliases.zsh $(ZSHHOME)/env.zsh $(ZSHHOME)/plugins.zsh $(ZSHHOME)/functions $(OH_MY_ZSH_DIR)/custom/themes/custom.zsh-theme
 
 $(OH_MY_ZSH_DIR):
 	git clone $(OH_MY_ZSH_GITHUB_URL) $(OH_MY_ZSH_DIR)
@@ -30,3 +30,7 @@ $(ZSHHOME)/plugins.zsh: $(SELF_ZSH_DIR)/plugins.zsh
 $(ZSHHOME)/functions: $(SELF_ZSH_DIR)/functions
 	mkdir -p $(ZSHHOME)/functions
 	find $(SELF_ZSH_DIR)/functions -type f -print0 | xargs -0 -I{} ln -sf {} $(ZSHHOME)/functions/
+
+$(OH_MY_ZSH_DIR)/custom/themes/custom.zsh-theme: $(SELF_ZSH_DIR)/custom.zsh-theme
+	mkdir -p $(OH_MY_ZSH_DIR)/custom/themes
+	ln -sf $(abspath $(SELF_ZSH_DIR)/custom.zsh-theme) $(OH_MY_ZSH_DIR)/custom/themes/custom.zsh-theme

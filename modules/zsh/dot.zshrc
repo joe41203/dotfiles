@@ -3,10 +3,18 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSHHOME="$HOME/.zsh"
 
 # Set name of the theme to load
-ZSH_THEME="garyblessington"
+ZSH_THEME="custom"
 
 # Which plugins would you like to load?
-plugins=(git)
+plugins=(
+    git
+    bundler
+    macos
+    rake
+    rbenv
+    ruby
+    virtualenv
+)
 
 source $ZSH/oh-my-zsh.sh
 
