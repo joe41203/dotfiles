@@ -17,6 +17,7 @@ alias la='lsd -a'
 alias lt='lsd --tree'
 
 alias aic='npx aicommits'
+alias v='source .venv/bin/activate'
 
 alias compress-images='compress-images'
 alias compress-image-peco='compress-image-peco'
