@@ -57,12 +57,20 @@ cask "google-japanese-ime"
 cask "visual-studio-code"
 
 mas "Amphetamine", id: 937984704
+mas "Apple Configurator", id: 1037126344
+mas "Be Focused", id: 973134470
+mas "CapCut", id: 1500855883
 mas "feedly", id: 865500966
+mas "KakaoTalk", id: 869223134
+mas "Kaspersky VPN", id: 1208561404
 mas "Kindle", id: 302584613
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
+mas "MARKETSPEED", id: 946680495
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode", id: 1289197285
+mas "Pages", id: 409201541
+mas "SiteSucker", id: 442168834
 mas "Slack", id: 803453959
 mas "Xcode", id: 497799835
 
