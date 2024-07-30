@@ -39,3 +39,6 @@ setopt hist_save_no_dups
 setopt hist_no_store
 setopt hist_expand
 setopt inc_append_history
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
