@@ -14,6 +14,7 @@ plugins=(
     rbenv
     ruby
     virtualenv
+    kube-ps1
 )
 
 source $ZSH/oh-my-zsh.sh
